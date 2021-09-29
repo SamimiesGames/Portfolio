@@ -7,7 +7,8 @@
     justify-content: flex-end;
 }
 
-.navigation.main {
+.navigation {
+    display: flex;
     position: relative;
 
     width: 100%;
@@ -16,10 +17,5 @@
     padding: 1% 1% 1% 1%;
 
     background-color: cornsilk;
-}
-
-.navigation {
-    display: flex;
-    position: fixed;
     font-family: "Courier New", "Lucida Console", monospace;
 }
