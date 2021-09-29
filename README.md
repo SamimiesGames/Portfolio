@@ -2,6 +2,6 @@
 ![HeroBanner](https://source.unsplash.com/1920x1080/?js)
 ## Contact me!
 ```yaml
-email: sami.laatikainen@saunalahti.fi
-discord: Samimies#3718
+Email: sami.laatikainen@saunalahti.fi
+Discord: Samimies#3718
 ```
