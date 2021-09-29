@@ -1,4 +1,4 @@
-import { load_cms } from "./cms/cms.js";
+import { load_cms } from "./mycms/cms.js";
 
 
 load_cms()

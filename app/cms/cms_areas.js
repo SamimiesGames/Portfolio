@@ -1,5 +1,5 @@
 export class CMSArea {
-    constructor(endpoint_id, default_content=null) {
+    constructor(endpoint_id, default_content = null) {
         this.endpoint = document.getElementById(endpoint_id)
 
         this.doms = []
@@ -19,6 +19,7 @@ export class CMSArea {
 
     add_content(content) {
         const new_content = content.dom.cloneNode(true)
+        new_content.hidden = false
         new_content.textContent = content.name
 
         content.on_create(new_content)
