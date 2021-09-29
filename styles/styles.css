@@ -1,0 +1,6 @@
+@import "navigation.css";
+
+
+html {
+    scroll-behavior: smooth;
+}
