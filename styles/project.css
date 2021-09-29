@@ -1,0 +1,11 @@
+.project {
+    background-color: whitesmoke !important;
+    -webkit-backdrop-filter: blur(4px) !important;
+    opacity: 85% !important;
+
+    width: 95%;
+
+    margin: 2.5% 2.5% 2.5% 2.5%;
+}
+
+

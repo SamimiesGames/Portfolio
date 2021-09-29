@@ -1,21 +1,14 @@
 export class CMSArea {
-    constructor(endpoint_id, default_content=null, redirects=null) {
+    constructor(endpoint_id, default_content=null) {
         this.endpoint = document.getElementById(endpoint_id)
-        this.dom = document.createElement("a")
 
         this.doms = []
 
         if (default_content != null) {
             this.add_contents(default_content)
         }
-    }
 
-    copy_dom() {
-        const dom = this.dom.cloneNode(true)
-        console.debug("Adding dom: ", dom)
-        this.doms.push(dom)
-
-        return dom
+        this.render_all()
     }
 
     add_contents(contents) {
@@ -25,9 +18,12 @@ export class CMSArea {
     }
 
     add_content(content) {
-        const new_content = this.copy_dom()
+        const new_content = content.dom.cloneNode(true)
         new_content.textContent = content.name
-        new_content.href = content.redirect
+
+        content.on_create(new_content)
+
+        this.doms.push(new_content)
     }
 
     render_all() {
@@ -36,22 +32,3 @@ export class CMSArea {
         }
     }
 }
-
-
-class Content {
-    constructor(name, redirect = null) {
-        this.name = name
-        this.redirect = redirect
-    }
-}
-
-
-export const CMSAreas = [
-    new CMSArea(
-        "redirects",
-        [
-            new Content("Projektit", "#projects"),
-            new Content("Galleria", "galleria.html")
-        ]
-    )
-]

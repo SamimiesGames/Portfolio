@@ -28,7 +28,12 @@
     position: sticky;
 
     overflow: hidden;
-    background-color: cornsilk;
+
+    background-color: whitesmoke !important;
+    -webkit-backdrop-filter: blur(4px) !important;
+    opacity: 85% !important;
+
+    border-radius: 4px;
+
     color: #1e1e1e;
-    font-family: "Courier New", "Lucida Console", monospace;
 }
