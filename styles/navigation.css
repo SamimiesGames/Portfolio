@@ -1,9 +1,15 @@
-.navigation span {
-    float: left;
-    font-size: 20px;
-    padding: 14px 16px;
-    text-align: center;
+
+
+.navigation a:hover {
+    background: grey;
 }
+
+
+.username {
+    float: left !important;
+    font-size: 20px !important;
+}
+
 
 .navigation a {
     float: right;
@@ -13,9 +19,14 @@
     text-decoration: none;
 
     color: #1e1e1e !important;
+
+    transition: background-color 1s linear;
 }
 
+
 .navigation {
+    position: sticky;
+
     overflow: hidden;
     background-color: cornsilk;
     color: #1e1e1e;
