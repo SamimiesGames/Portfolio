@@ -1,21 +1,23 @@
-.name {
-    justify-self: flex-start;
+.navigation span {
+    float: left;
+    font-size: 20px;
+    padding: 14px 16px;
+    text-align: center;
 }
 
-.redirect {
-    flex-flow: row;
-    justify-content: flex-end;
+.navigation a {
+    float: right;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    color: #1e1e1e !important;
 }
 
 .navigation {
-    display: flex;
-    position: relative;
-
-    width: 100%;
-    height: 10%;
-
-    padding: 1% 1% 1% 1%;
-
+    overflow: hidden;
     background-color: cornsilk;
+    color: #1e1e1e;
     font-family: "Courier New", "Lucida Console", monospace;
 }
