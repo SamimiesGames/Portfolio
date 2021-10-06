@@ -2,37 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, height=device-height">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <title>My Portfolio</title>
+    <title>Galleria</title>
 </head>
 <body>
     <header>
-        <div class="navigation">
-            <a class="username" href="#"><strong>Sami Laatikainen</strong></a>
-            <a id="redirect" hidden></a>  <!-- DOM TEMPLATE -->
-            <div class="redirects" id="redirects">
-                <!-- Auto-generated with JavaScript from an CMS database -->
+        <div class="navigation glass">
+            <a class="username" href="#username" id="username"><strong>Sami Laatikainen</strong></a>
+            <div class="redirects">
+                <a class="redirect">Yhteystiedot</a>
+                <a class="redirect" href="#projektit">Projektit</a>
+                <a class="redirect">Taidot</a>
+                <a class="redirect">Minusta</a>
+                <a class="redirect" href="galleria.html">Galleria</a>
             </div>
         </div>
     </header>
     <section class="herobanner">
         <span>Tervetuloa Portfoliooni!</span>
     </section>
-    <section class="projects" id="projects">
-        <div id="project" class="project" hidden></div>  <!-- DOM TEMPLATE -->
-        <!-- Auto-generated with JavaScript from an CMS database -->
-    </section>
-    <section class="skills">
-        <div class="skill">
-            <progress></progress>
+    <section id="projektit">
+        <div class="project glass slide-in" id="hannankakku">
+            <strong>Hannankakut</strong>
+        </div>
+        <div class="project glass slide-in" id="responsiivisuus">
+            <strong>Responsiivisuus</strong>
+        </div>
+        <div class="project glass slide-in" id="flex">
+            <strong>Flex</strong>
         </div>
     </section>
-    <footer class="contact">
-    </footer>
-    <script type="module" src="app/App.js"></script>
 </body>
 </html>

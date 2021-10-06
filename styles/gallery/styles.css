@@ -1,0 +1,33 @@
+.gallery img {
+    transition: transform 1s;
+    max-width: 100%;
+    object-fit: fill;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.gallery {
+    display: inline-grid;
+
+    grid-gap: .5rem;
+
+    margin: 1.5% 1.5% 1.5% 1.5%;
+    padding: 2.5% 2.5% 2.5% 2.5%;
+
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+
+    grid-template-areas:
+            "a b c"
+            "d e f"
+            "g g g";
+}
+
+.gallery-items {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,15 @@
+.skill {
+    background-color: whitesmoke;
+    -webkit-backdrop-filter: blur(4px);
+    opacity: 85%;
+
+    width: 95%;
+
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding: .75% .75% .75% .75%;
+
+    border-radius: 4px;
+}
+
+

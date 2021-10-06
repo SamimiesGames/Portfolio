@@ -1,16 +1,25 @@
 @import "navigation.css";
 @import "herobanner.css";
 @import "project.css";
+@import "skills.css";
+@import "slide.css";
 
 
 html {
     scroll-behavior: smooth;
     font-family: "Courier New", "Lucida Console", monospace;
 
-    background-image: url("https://source.unsplash.com/1920x1080/?landscape");
+    background-image: url("../res/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+.glass {
+    background-color: whitesmoke;
+    -webkit-backdrop-filter: blur(4px);
+    opacity: 85%;
 }
 
 

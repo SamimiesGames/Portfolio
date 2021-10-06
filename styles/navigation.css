@@ -2,38 +2,39 @@
 
 .navigation a:hover {
     background: grey;
+    transform: scale(1.05);
 }
 
 
 .username {
     float: left !important;
-    font-size: 20px !important;
+    font-size: 1.5rem !important;
 }
 
 
 .navigation a {
     float: right;
-    font-size: 16px;
+
+    font-size: 1rem;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1.5% 1.5% 1.5% 1.5%;
+
     text-decoration: none;
 
     color: #1e1e1e !important;
 
-    transition: background-color 1s linear;
+    transition: .5s linear;
 }
 
 
 .navigation {
+    position: -webkit-sticky;
     position: sticky;
 
     overflow: hidden;
 
-    background-color: whitesmoke !important;
-    -webkit-backdrop-filter: blur(4px) !important;
-    opacity: 85% !important;
-
     border-radius: 4px;
+    -webkit-border-radius: 4px;
 
     color: #1e1e1e;
 }
