@@ -1,7 +1,10 @@
+@import "aboutme/styles.css";
+
 @import "navigation.css";
 @import "herobanner.css";
 @import "project.css";
 @import "skills.css";
+
 @import "slide.css";
 
 

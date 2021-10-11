@@ -1,0 +1,18 @@
+.aboutme {
+    margin: 2.5% 2.5% 2.5% 2.5%;
+    width: 3fr;
+    height: 25%;
+
+    padding: 1.5% 1.5% 1.5% 1.5%;
+
+    border-radius: 4px;
+}
+
+
+.aboutme span {
+    white-space: pre-line;
+}
+
+.aboutme strong {
+    font-size: 1.5rem;
+}
