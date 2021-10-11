@@ -1,4 +1,4 @@
-import { load_cms } from "./mycms/cms.js";
+import { add_events } from "./redirects.js"
 
 
-load_cms()
+add_events()

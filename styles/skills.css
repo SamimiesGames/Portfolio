@@ -1,15 +1,85 @@
-.skill {
-    background-color: whitesmoke;
-    -webkit-backdrop-filter: blur(4px);
-    opacity: 85%;
 
-    width: 95%;
+progress[value] {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    /* Get rid of default border in Firefox. */
+    border: none;
+
+    /* Dimensions */
+    width: 250px;
+    height: 20px;
+
+    border-radius: 60px;
+}
+
+progress[value]::-moz-progress-bar {
+    background-image:
+            -moz-linear-gradient(cyan, blue);
+
+    border-radius: 60px;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-image:
+            -webkit-linear-gradient(cyan, blue);
+
+    border-radius: 60px;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+.skill img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.skill {
+    font-family: "Manrope", monospace;
+
+    text-align: center;
 
     margin-left: 2.5%;
     margin-right: 2.5%;
-    padding: .75% .75% .75% .75%;
+
+    padding: 5% 5% 5% 5%;
 
     border-radius: 4px;
 }
 
+
+.skills {
+    display: grid;
+
+    grid-gap: .5rem;
+
+    margin: 1.5% 1.5% 1.5% 1.5%;
+    padding: 2.5% 2.5% 2.5% 2.5%;
+
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+
+    grid-template-areas:
+            "a b c";
+}
+
+@media (max-width: 762px) {
+    .skills {
+        grid-template-areas:
+            ". a ."
+            ". b ."
+            ". c .";
+    }
+}
+
+@media (max-width: 970px) {
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "a b"
+            "c c";
+    }
+}
 

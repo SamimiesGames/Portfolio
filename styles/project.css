@@ -1,12 +1,43 @@
-.project {
-    width: 95%;
+.project img {
+    max-width: 95%;
+    max-height: 95%;
+}
 
+.project img:after {
+    opacity: 100% !important;
+}
+
+.project {
     margin-left: 2.5%;
     margin-right: 2.5%;
 
     padding: 2% 2% 2% 2%;
 
     border-radius: 4px;
+}
+
+.projects {
+    display: grid;
+
+    grid-gap: .5rem;
+
+    margin: 1.5% 1.5% 1.5% 1.5%;
+    padding: 2.5% 2.5% 2.5% 2.5%;
+
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+
+    grid-template-areas:
+            "a b c";
+}
+
+@media (max-width: 762px) {
+    .projects {
+        grid-template-areas:
+            "a a a"
+            "b b b"
+            "c c c";
+    }
 }
 
 

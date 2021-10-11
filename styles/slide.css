@@ -1,21 +1,26 @@
+:root {
+    --animation-time: 0.85s
+}
+
+
 .slide-in {
     transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
 
-    animation: slide-in 0.5s forwards;
-    -webkit-animation: slide-in 0.5s forwards;
+    animation: slide-in var(--animation-time) forwards;
+    -webkit-animation: slide-in var(--animation-time) forwards;
 }
 
 .slide-out {
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
 
-    animation: slide-out 0.5s forwards;
-    -webkit-animation: slide-out 0.5s forwards;
+    animation: slide-out var(--animation-time) forwards;
+    -webkit-animation: slide-out var(--animation-time) forwards;
 }
 
 @keyframes slide-in {
-    100% { transform: translateX(-2%); }
+    100% { transform: translateX(0%); }
 }
 
 @-webkit-keyframes slide-in {
@@ -23,11 +28,11 @@
 }
 
 @keyframes slide-out {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(-100%); }
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0%); }
 }
 
 @-webkit-keyframes slide-out {
-    0% { -webkit-transform: translateX(0%); }
-    100% { -webkit-transform: translateX(-100%); }
+    0% { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(0%); }
 }

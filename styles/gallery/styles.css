@@ -4,10 +4,6 @@
     object-fit: fill;
 }
 
-.gallery img:hover {
-    transform: scale(1.05);
-}
-
 .gallery {
     display: inline-grid;
 
@@ -23,11 +19,4 @@
             "a b c"
             "d e f"
             "g g g";
-}
-
-.gallery-items {
-    display: flex;
-
-    align-items: center;
-    justify-content: space-between;
 }

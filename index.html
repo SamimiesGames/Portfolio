@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
 
-    <title>Galleria</title>
+    <title>Portfolio</title>
 </head>
 <body>
     <header>
@@ -16,8 +17,8 @@
             <div class="redirects">
                 <a class="redirect">Yhteystiedot</a>
                 <a class="redirect" href="#projektit">Projektit</a>
-                <a class="redirect">Taidot</a>
-                <a class="redirect">Minusta</a>
+                <a class="redirect" href="#taidot">Taidot</a>
+                <a class="redirect">Minusta </a>
                 <a class="redirect" href="galleria.html">Galleria</a>
             </div>
         </div>
@@ -25,16 +26,34 @@
     <section class="herobanner">
         <span>Tervetuloa Portfoliooni!</span>
     </section>
-    <section id="projektit">
-        <div class="project glass slide-in" id="hannankakku">
-            <strong>Hannankakut</strong>
+    <section class="projects" id="projektit">
+        <div class="project glass mi" id="hannankakku" style="grid-area: a">
+            <strong>Hannankakut</strong><br>
+            <img alt="Cake" src="https://source.unsplash.com/1280x720/?cake">
         </div>
-        <div class="project glass slide-in" id="responsiivisuus">
-            <strong>Responsiivisuus</strong>
+        <div class="project glass mi" id="responsiivisuus" style="grid-area: b">
+            <strong>Responsiivisuus</strong><br>
+            <img alt="Responsive photo" src="https://source.unsplash.com/1280x720/?webdesign">
         </div>
-        <div class="project glass slide-in" id="flex">
-            <strong>Flex</strong>
+        <div class="project glass mi" id="grid" style="grid-area: c">
+            <strong>SEO</strong><br>
+            <img alt="Responsive photo" src="https://source.unsplash.com/1280x720/?seo">
         </div>
     </section>
+    <section class="skills" id="taidot">
+        <div class="glass skill mi" style="grid-area: a">
+            HTML5<br>
+            <progress max="100" value="80"></progress>
+        </div>
+        <div class="glass skill mi" style="grid-area: b">
+            CSS3<br>
+            <progress max="100" value="50"></progress>
+        </div>
+        <div class="glass skill mi" style="grid-area: c">
+            JavaScript<br>
+            <progress max="100" value="45"></progress>
+        </div>
+    </section>
+    <script type="module" src="app/App.js"></script>
 </body>
 </html>
