@@ -64,7 +64,9 @@ progress[value]::-webkit-progress-bar {
     grid-template-areas:
             "a b c";
 }
-
+@media (max-width: 700px) {
+    .skills{display: flex;flex-direction: column;}
+}
 @media (max-width: 762px) {
     .skills {
         grid-template-areas:
