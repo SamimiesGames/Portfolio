@@ -16,16 +16,14 @@ progress[value] {
 }
 
 progress[value]::-moz-progress-bar {
-    background-image:
-            -moz-linear-gradient(cyan, blue);
+    background-image: -moz-linear-gradient(cyan, blue);
 
     border-radius: 60px;
     background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 
 progress[value]::-webkit-progress-bar {
-    background-image:
-            -webkit-linear-gradient(cyan, blue);
+    background-image: -webkit-linear-gradient(cyan, blue);
 
     border-radius: 60px;
     background-size: 35px 20px, 100% 100%, 100% 100%;
@@ -64,9 +62,14 @@ progress[value]::-webkit-progress-bar {
     grid-template-areas:
             "a b c";
 }
+
 @media (max-width: 700px) {
-    .skills{display: flex;flex-direction: column;}
+    .skills {
+        display: flex;
+        flex-direction: column;
+    }
 }
+
 @media (max-width: 762px) {
     .skills {
         grid-template-areas:
